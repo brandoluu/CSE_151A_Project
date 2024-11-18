@@ -32,8 +32,10 @@ For the training of our dataset, we first decided to use two support vector mach
 - Training Accuracy RBF ACC: 0.69
 - Testing Accuracy RBF ACC: 0.63
 
-### Fitting Graph and Conclusion:
-For our fitting graph, we created a decision boundary, and we primarily looked at the relationship between `n_instruments` and the other categories. The boundaries within the images that were produced seemed to be warped and not organized. This along with the fact that our errors measured were very close to each other suggests that our model is on the underfitting side. 
+### Fitting Graph and Conclusions Made:
+Based on the following fitting graph: ![img](image.png)
+
+We have determined that our model is underfitted due to the similarities between the testing error and the training error. This is also supported by our decision boundaries from our SVM are warped and do not have distinct boundaries between different features. These decision boundaries were made between `n_instruments` and the other features of our dataset. 
 
 Some things we have considered for the next training step: 
 - Change the degree we used in polynomial expansion to see if a higher expansion would be beneficial to our model
