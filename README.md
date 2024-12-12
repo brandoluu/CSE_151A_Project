@@ -8,13 +8,16 @@ Imagine a world with no music, no songs to lift your spirits, no melody to sooth
 ### Data Exploration:
 
 ![histogram](Screenshot_2024-12-11_201922.png)
-
+> Above demonstrates the frequency of each genre in our dataset, as can be seen Pop_Rock makes up a majority of the dataset.
 
 ![histogram2](histo2.png)
+> Above demonstrates the temo_estimates per genre. Genre's such as Commedy_Spoken and Blues have tighter estimeates as opposed to genres such as Pop_ROck and Electronic
 
 ![histogram3](histo3.png)
+> Above shows the average melodic intervals per genre. Interestinglyl, genres such as Classical, Folk, and Stage have very tight and low intervals.
 
 ![histogram2](histo4.png)
+> Above shows the number of intruments per genre. 
 
 Data exploration was conducted to compute a comprehensive set of musical features from MIDI files. The provided function compute_statistics was used to extract various metrics for characterizing the musical content. It was important to first extract key features that are not only available for all file samples but each feature needed to have the potential to allow the model to distinguish each genre clearly without leaving any ambiguity. An example of an ambiguous or nonhelpful feature would be program numbers for indication of the types of instruments in a song. We’ve noticed that features like these are less helpful since many genres use the same instrumentation. We needed features that focused on the model’s possible prediction scope. In other words, the more genres a feature can eliminate the more helpful the feature can be for the model’s performance. Within our data exploration function we developed extracts of the song’s basic structure, rhythmic features, and melodic features. 
 
@@ -284,6 +287,7 @@ If we were to do the project all over again, we would do a deeper inspection of 
 
 **Jordan Huynh:** Member: Contributed to preprocessing and model creation/debugging for milestone 3 and 4 as well as the final milestone. Wrote large parts of preprocessing section of final writeup. Helped with model selection and analysis of models and results.  
 
+**Brandon Salinas Sanchez** Member: Contributed to some EDA of the data, assisted in early data processing and model selection
 
 
 
