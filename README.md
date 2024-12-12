@@ -9,6 +9,12 @@ Imagine a world with no music, no songs to lift your spirits, no melody to sooth
 
 ![histogram](Screenshot_2024-12-11_201922.png)
 
+![histogram2](histo2)
+
+![histogram3](histo3)
+
+![histogram2](histo4)
+
 Data exploration was conducted to compute a comprehensive set of musical features from MIDI files. The provided function compute_statistics was used to extract various metrics for characterizing the musical content. It was important to first extract key features that are not only available for all file samples but each feature needed to have the potential to allow the model to distinguish each genre clearly without leaving any ambiguity. An example of an ambiguous or nonhelpful feature would be program numbers for indication of the types of instruments in a song. We’ve noticed that features like these are less helpful since many genres use the same instrumentation. We needed features that focused on the model’s possible prediction scope. In other words, the more genres a feature can eliminate the more helpful the feature can be for the model’s performance. Within our data exploration function we developed extracts of the song’s basic structure, rhythmic features, and melodic features. 
 
 ` 'n_instruments': len(pm.instruments) `
